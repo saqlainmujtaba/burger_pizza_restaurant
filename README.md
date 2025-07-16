@@ -1,10 +1,10 @@
-# 🍗 KFC Homepage Clone
+# 🍗 KFC Website Clone
 
 This is a responsive clone of the official KFC homepage, built as a personal project to enhance frontend development skills and showcase UI replication abilities. It mimics the layout, design, and responsiveness of [https://www.kfc.com](https://www.kfc.com).
 
 ## 📺 Live Demo
 
-[🔗 View Live Site](https://resturant-landingPage-by-saqlain.vercel.app) 
+[🔗 View Live Site](https://burger_pizza_restaurant.vercel.app) 
 
 ---
 

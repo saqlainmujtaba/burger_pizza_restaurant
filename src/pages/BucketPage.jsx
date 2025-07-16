@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import Header from "../components/Header";
 import { decreaseQty, increaseQty, removeItem } from "../redux/cartSlice.js";
 
-import "../styles/pages/bucketPage.css";
+import "../styles/pages/BucketPage.css";
 
 const BucketPage = () => {
   const bucketItems = useSelector((state) => state.cart.bucketItems);

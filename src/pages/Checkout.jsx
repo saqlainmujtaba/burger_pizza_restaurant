@@ -5,14 +5,14 @@ import "../styles/pages/checkout.css";
 import { useEffect, useState } from "react";
 import { GrStatusGood } from "react-icons/gr";
 import Confetti from "react-confetti";
-import { useWindowSize } from "@react-hook/window-size";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { useSafeWindowSize } from "../hooks/useSafeWindowSize";
 
 const Checkout = () => {
   const [selectedPayment, setSelectedPayment] = useState("");
   const [paid, setPaid] = useState(false);
-  const [width, height] = useWindowSize();
+const [width, height] = useSafeWindowSize();
   const [showConfetti, setShowConfetti] = useState(false); // show on load
 
   const handlePaymentChange = (e) => {

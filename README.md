@@ -31,7 +31,7 @@ This is a responsive clone of the official KFC homepage, built as a personal pro
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/saqlainmujtaba/resturant-landingPage.git
+   git clone https://github.com/saqlainmujtaba/burger_pizza_restaurant.git
 
 2. Navigate to the project directory:
     cd resturant-landingPage

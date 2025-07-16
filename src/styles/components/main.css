@@ -1,0 +1,11 @@
+.bannerCrausal{
+    max-width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bannerCrausal img {
+  width: 100vw;
+  height: auto;
+  flex-shrink: 0;
+}

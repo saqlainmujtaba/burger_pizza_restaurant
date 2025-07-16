@@ -1,0 +1,26 @@
+.menuContainer {
+  display: flex;
+  flex: 1;
+  padding-left: 4rem;
+}
+.menuList {
+  flex: 2;
+  padding: 2rem;
+}
+
+.menuCategory {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.categoryItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}

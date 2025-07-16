@@ -1,0 +1,157 @@
+.exploreMenu {
+ 
+  padding: var(--padding);
+  background-color: var(--mainbg); 
+  color: white;
+}
+
+.exploreMenu h1 {
+  font-size: 2rem;
+  margin-bottom: var(--contaierGap);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  border-left: 4px solid var(--cardBorder);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.emcards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 1rem 4rem;
+  /* overflow-x: scroll; */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+/* .emcards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.emcards::-webkit-scrollbar-thumb {
+  background: var(--cardBorder);
+  border-radius: 10px;
+}  */
+
+.emcard {
+  scroll-snap-align: start;
+  min-width: 14.5rem;
+  min-height: 15rem;
+  border-radius: 50% 50% 0 50%;
+  display: flex;
+  background-color: var(--lightbg);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.2rem 0.65rem;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.emcard::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--mainbg);
+  border-radius: 50%;
+  bottom: 8px;
+  right: 8px;
+}
+
+.emcard:hover {
+  transform: translateY(-1rem);
+  /* transform: scale(1.15); */
+}
+
+.emcard img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin-top: auto;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 3px;
+  background-color: var(--cardBorder);
+  margin: 0.25rem auto 0;
+  border-radius: 2px;
+}
+
+@media screen and (min-width:275px) and (max-width: 821px) {
+.exploreMenu {
+ 
+  padding: var(--halfpadding);
+  /* background-color: var(--mainbg); 
+  color: white; */
+  user-select: none;
+}
+.emcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  
+  gap: 1.5rem;
+  padding: 1rem 1rem;
+ /* background-color: white; */
+}
+.emcard {
+  scroll-snap-align: start;
+  min-width: 7.5rem;
+  max-height: 7rem;
+  border-radius: 15px ;
+  border: dotted 2.5px white;
+  
+  display: flex;
+  background-color: var(--lightbg);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.6rem 0.335rem  0.6rem 0.335rem;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.emcard::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border-radius: 50%;
+  bottom: 0px;
+  right: 0px;
+}
+.emcard:hover {
+  /* transform: translateX(1rem); */
+  transform: scale(1.05);
+}
+.emcard img {
+  width: 90%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+}

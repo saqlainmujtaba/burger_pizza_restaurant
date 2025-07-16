@@ -1,0 +1,124 @@
+footer {
+  background-color: purple;
+  background-color: var(--mainbg);
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--containerGap);
+  padding: 1rem;
+  border: solid 3px transparent;
+  /* border-bottom-color: var(--themeColor); */
+  margin-bottom: 1rem;
+}
+
+/* brand >  socials */
+.socials {
+  display: flex;
+  gap: var(--containerGap);
+  border: solid 4px transparent;
+  /* border-left-color: var(--themeColor); */
+}
+
+.socials::before {
+  content: "";
+  border: solid 2px red;
+  border-radius: 999px;
+}
+
+/* links */
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.links > .about > p,
+.links > .contact > p,
+.links > .terms > p {
+  padding: 1rem 0;
+}
+
+/* links > apk */
+.apk {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.apk > a {
+  width: 50%;
+}
+.apk > a > img {
+  width: 100%;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  /* background-color: aliceblue; */
+}
+
+.rights {
+  font-size: medium;
+}
+
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .apk {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .apk > a {
+    width: 100%;
+  }
+  .apk > a > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .links {
+  display: grid;
+  grid-template-columns: 1fr  ;
+  padding: 1rem 0;
+  width: 100%;
+}
+.links .about,.contact,.terms{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.apk > a {
+    width: 40%;
+  }
+  .apk > a > img {
+    width: 100%;
+  }
+  .rights {
+  font-size: small;
+}
+}

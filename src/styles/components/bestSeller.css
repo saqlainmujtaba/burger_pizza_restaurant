@@ -1,0 +1,85 @@
+.bestSellers {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100vw;
+  padding:var(--padding);
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  border-left: 4px solid red;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.bsItems {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.bsItem {
+  min-width: 290px;
+  background-color: var(--lightbg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+  border-radius: calc(0.3 * var(--borderRadius));
+}
+
+.bsItem:hover .bsImage {
+  scale: 1.05;
+}
+
+/* card Title style */
+
+.bsTitle {
+  padding: 0.5rem;
+  margin: 1rem 0 0 1rem;
+}
+
+/* card price style */
+.price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.price > h3 {
+  background-color: var(--themeColor);
+  padding: 3px 1rem;
+}
+
+.price > h3::before {
+  position: relative;
+  content: "";
+  left: -1rem;
+  bottom: 0;
+  top: 0;
+  border: 0.5rem solid transparent;
+  border-left-color: var(--lightbg);
+}
+
+/* card image  */
+.bsImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.21s ease;
+}
+
+.bsImage > img {
+  width: 100%;
+}
